@@ -125,30 +125,38 @@ public class EnemyGenerator : MonoBehaviour
 
     void ApplyTrait(string trait)
     {
-        // Disable all traits first
-        DragonArm.SetActive(false);
-        FeatherArm.SetActive(false);
-        PixieArm.SetActive(false);
-        DragonLeg.SetActive(false);
-        FeatherLeg.SetActive(false);
-        PixieLeg.SetActive(false);
-        // StrongArm.SetActive(false);
-        // FastLeg.SetActive(false);
-        // SturdyTorso.SetActive(false);
-        DragonWings.SetActive(false);
-        WingsFeathers.SetActive(false);
-        PixieWings.SetActive(false);
-        // SturdyTorso.SetActive(false);
-        DragonTorso.SetActive(false);
-        FeatherTorso.SetActive(false);
-        PixieTorso.SetActive(false);
-        head.SetActive(true);
-        body.SetActive(true);
-        leftArm.SetActive(true);
-        rightArm.SetActive(true);
-        leftLeg.SetActive(true);
-        rightLeg.SetActive(true);
-        tail.SetActive(true);
+
+        foreach (GameObject part in new[] { 
+            DragonArm, 
+            FeatherArm, 
+            PixieArm, 
+            DragonLeg, 
+            FeatherLeg, 
+            PixieLeg, 
+            DragonWings, 
+            WingsFeathers, 
+            PixieWings, 
+            DragonTorso, 
+            FeatherTorso, 
+            PixieTorso 
+            })
+        {
+            part.SetActive(false);
+        }
+
+
+        foreach (GameObject part in new[] { 
+            head, 
+            body, 
+            leftArm, 
+            rightArm, 
+            leftLeg, 
+            rightLeg, 
+            tail 
+            })
+        {
+            part.SetActive(true);
+        }
 
 
         // Enable the chosen trait
@@ -213,6 +221,7 @@ public class EnemyGenerator : MonoBehaviour
                             DragonLeg.SetActive(true);
                             break;
                         case "FeatherLeg":
+                            tail.SetActive(false);
                             FeatherLeg.SetActive(true);
                             break;
                         case "PixieLeg":
@@ -227,6 +236,7 @@ public class EnemyGenerator : MonoBehaviour
                             DragonLeg.SetActive(true);
                             break;
                         case "FeatherLeg":
+                            tail.SetActive(false);
                             FeatherLeg.SetActive(true);
                             break;
                         case "PixieLeg":
@@ -241,6 +251,7 @@ public class EnemyGenerator : MonoBehaviour
                             DragonLeg.SetActive(true);
                             break;
                         case "FeatherLeg":
+                            tail.SetActive(false);
                             FeatherLeg.SetActive(true);
                             break;
                         case "PixieLeg":
@@ -387,7 +398,7 @@ public class EnemyGenerator : MonoBehaviour
         ApplyTrait(chosenTrait); 
         enemyColor = ApplytheColor(colorMood);
         ApplyColor(enemyColor); 
-        Debug.Log("Eenemy Generated: " + role + " with trait " + chosenTrait);
+        Debug.Log("Eenemy Generated: " + role + " with trait " + chosenTrait + " and color mood " + colorMood);
     }
 
     #if UNITY_EDITOR

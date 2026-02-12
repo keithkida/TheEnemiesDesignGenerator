@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4859148119652492215, guid: 23fc17a9bed7b4e4f980324269ef787b, type: 3}
       propertyPath: colorMood
-      value: Sad
+      value: Anger
       objectReference: {fileID: 0}
     - target: {fileID: 4957287823182226550, guid: 23fc17a9bed7b4e4f980324269ef787b, type: 3}
       propertyPath: m_Name
