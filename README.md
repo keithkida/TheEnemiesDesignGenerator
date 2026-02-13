@@ -56,8 +56,7 @@ Jonathan:
 Micheal Tang:
 
   Color knob: make color selection easier
-  
-    why update the color without actually pressing the generate button
+     update the color by actually pressing the generate button
     
   Can the enemies be exportable?
   
