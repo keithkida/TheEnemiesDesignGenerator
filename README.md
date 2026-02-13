@@ -17,6 +17,8 @@ Parameters:
   Calm: green variation of color
   
   Happy: pink variation of color
+
+  Changes the output by giving it different variations of the mood colors so that it would seem like different levels of that selected mood.
   
 Role: (size)
 
@@ -25,6 +27,8 @@ Role: (size)
   Leader: medium size enemy
   
   Boss: large size enemy
+
+  Changes the output by giving differeht size of each role to make the leader seem more or less intimidating based on what you want from that role.
   
 Trait: 
 
@@ -35,6 +39,8 @@ Trait:
   Flight 🪽: wing variation
   
   Durability 🛡️: shield and chestplate variation
+
+  Changes the output by giving different types of those traits to give different vibes. For example, some trait variations can seem futureisitc, some seem mideaval, and some might feel fantasy-like
   
 
 
