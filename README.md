@@ -1,7 +1,9 @@
 What the tool generates (plain language, keep it non-technical).
+
 Creates a fully customized enemy based on user selected parameters and randomized visual traits and size. Uses weighted randomness, having certain design variants of the decided traits appear more often depending on the role chosen. 
 
 How to run or access the tool (setup steps, controls, or links).
+
 Runs directly inside the Unity scene with UI panels to change the parameter. When you first open the generator on unity, run it for the first time, and press generate without any parameters decided it will only show a blank white enemy without any trait, so it is best to first decide what mood, role, and trait it will have before generating so that it will show what enemy you want.
 
 Parameter explanations (what each parameter does and how changing it affects output).
